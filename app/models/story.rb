@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 class Story < ApplicationRecord
-  validates :title, presence: true
+  belongs_to :user
+  validates :title, :user, :content, presence: true
 end

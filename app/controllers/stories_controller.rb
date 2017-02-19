@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class StoriesController < ApplicationController
+class StoriesController < OpenReadController
   before_action :set_story, only: [:show, :update, :destroy]
 
   # GET /stories
@@ -16,7 +16,7 @@ class StoriesController < ApplicationController
 
   # POST /stories
   def create
-    @story = Story.new(story_params)
+    @story = current_user.stories.build(story_params)
 
     if @story.save
       render json: @story, status: :created
@@ -41,13 +41,13 @@ class StoriesController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_story
-    @story = Story.find(params[:id])
+    @story = current_user.stories.find(params[:id])
   end
   private :set_story
 
   # Only allow a trusted parameter "white list" through.
   def story_params
-    params.require(:story).permit(:title)
+    params.require(:story).permit(:title, :content)
   end
   private :story_params
 end
