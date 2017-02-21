@@ -18,13 +18,13 @@
 #                password: 'abc123',
 #                password_confirmation: nil)
 # end
-stories = Story.create([{ title: 'An Unusual Story' }, { content: 'When I went..
-  '}])
 
 %w(assembly).each do |name|
   email = "#{name}@#{name}.com"
     next if User.exists? email: email
     User.create!(email: email,
                  password: 'assembly5',
-                 password_confirmation: nil)
+                 password_confirmation: 'assembly5')
 end
+
+Story.create(title: 'An Unusual Story', content: 'When I went..', user: User.first)
