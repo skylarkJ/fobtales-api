@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This file should contain all the record creation needed to experiment with
 # your app during development.
 #
@@ -9,7 +10,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
+#
 # %w(antony jeff matt jason).each do |name|
 #   email = "#{name}@#{name}.com"
 #   next if User.exists? email: email
@@ -17,3 +18,13 @@
 #                password: 'abc123',
 #                password_confirmation: nil)
 # end
+stories = Story.create([{ title: 'An Unusual Story' }, { content: 'When I went..
+  '}])
+
+%w(assembly).each do |name|
+  email = "#{name}@#{name}.com"
+    next if User.exists? email: email
+    User.create!(email: email,
+                 password: 'assembly5',
+                 password_confirmation: nil)
+end
