@@ -1,9 +1,21 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # Important Links
+APIs Repo
+[https://github.com/skylarkJ/fobtales-api/tree/master](https://github.com/skylarkJ/fobtales-api/tree/master)
+
+Client Repo
+[https://github.com/skylarkJ/fobtales-client/tree/master](https://github.com/skylarkJ/fobtales-client/tree/master)
+
+Live Application - Client
 [https://skylarkj.github.io/fobtales-client/](https://skylarkj.github.io/fobtales-client/)
 
-[https://github.com/skylarkJ/fobtales-client/tree/master](https://github.com/skylarkJ/fobtales-client/tree/master)
+Live Application - Back-end - Heroku
+[https://sleepy-hollows-32453.herokuapp.com/](https://sleepy-hollows-32453.herokuapp.com/)
+
+
+Pinted both repos on GitHub
+[https://github.com/skylarkJ](https://github.com/skylarkJ)
 
 # The technical part is described in the client repo
 
