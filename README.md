@@ -14,6 +14,8 @@ Live Application - Back-end - Heroku
 [https://sleepy-hollows-32453.herokuapp.com/](https://sleepy-hollows-32453.herokuapp.com/)
 
 
+Pinted both repos on GitHub
+[https://github.com/skylarkJ](https://github.com/skylarkJ)
 
 # The technical part is described in the client repo
 
